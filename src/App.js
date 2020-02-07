@@ -1,13 +1,12 @@
 import React, { useEffect } from 'react';
 import _ from 'lodash';
-import THREELib from 'three-js';
+import * as THREE from 'three';
 import Cube from './Items/Cube';
 import Plane from './Items/Plane';
 import Sphere from './Items/Sphere';
 import './App.css';
 
 // THREE
-const THREE = THREELib();
 
 // SCENE
 const scene = new THREE.Scene();
@@ -99,6 +98,7 @@ function renderScene() {
   requestAnimationFrame(renderScene);
 }
 
+// APP
 function App() {
   useEffect( () => {
     init();

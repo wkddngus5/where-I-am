@@ -1,7 +1,5 @@
-import THREELib from 'three-js';
+import * as THREE from 'three';
 import Item from './Item';
-
-const THREE = THREELib();
 
 class Plane extends Item {
     constructor({
